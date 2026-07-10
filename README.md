@@ -34,3 +34,4 @@ The project uses JUnit Jupiter for tests. Run them via:
 mvn test
 ```
 123
+1234
