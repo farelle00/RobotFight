@@ -1,6 +1,7 @@
 # RobotFight
+# Test d'interconnexion Jenkins - GitHub réussi !
 
-RobotFight is a simple Java application that simulates a battle between robots in an arena..... 
+RobotFight is a simple Java application that simulates a battle between robots in an arena.
 
 ## Features
 - Create robots with health points.
