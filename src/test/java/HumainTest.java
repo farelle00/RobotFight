@@ -1,33 +1,16 @@
-public class Humain {
-    private String nom;
-    private int lifePoints;
+import org.junit.jupiter.api.Test;
 
-    public Humain(String nom) {
-        this.nom = nom;
-        this.lifePoints = 10;
-    }
+import static org.junit.jupiter.api.Assertions.*;
 
-    public void fire(Robot robot) {
-        System.out.println("l'humain a rate sa cible");
-    }
+class HumainTest {
+    Robot robot1 = new Robot("D2R2");
+    Humain humain = new Humain("Marco");
 
-    public void fire(Humain humain) {
-        System.out.println("l'humain a rate sa cible");
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public int getLifePoints() {
-        return lifePoints;
-    }
-
-    public void setLifePoints(int lifePoints) {
-        this.lifePoints = lifePoints;
+    @Test
+    void fire() {
+        int lifePointBefore = robot1.getLifePoints();
+        humain.fire(robot1);
+        int lifePointAfter = robot1.getLifePoints();
+        assertEquals(lifePointBefore, lifePointAfter);
     }
 }
