@@ -8,14 +8,11 @@ public class Humain {
     }
 
     public void fire(Robot robot) {
-        double random = Math.random()*10;
-        if(random > 5) robot.setLifePoints(robot.getLifePoints() - 10);
-        else System.out.println("l'humain a raté sa cible");
+        System.out.println("l'humain a rate sa cible");
     }
+
     public void fire(Humain humain) {
-        double random = Math.random()*10;
-        if(random > 5) humain.setLifePoints(humain.getLifePoints() - 10);
-        else System.out.println("l'humain a raté sa cible");
+        System.out.println("l'humain a rate sa cible");
     }
 
     public String getNom() {
